@@ -1,0 +1,64 @@
+<%- include("baseContent/Header"); %>
+
+<div class="container">
+  <div class="postContentDisplay">
+    <div class="row">
+      <div class="col">
+        <img class="imgPostContent" src="https://images.unsplash.com/photo-1510629954389-c1e0da47d414?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" srcset="">
+  
+      </div>
+  
+      <div class="col">
+        <div class="form-group postContentDisplayText">
+          <h1>New Restaurant</h1>
+    
+          <form action="/restaurants" method="POST">
+            
+            <div class="inputText">
+              <p class="restaurantInputText">Restaurant Name:</p>
+              <input type="text" name="restaurantName" placeholder="Restaurant's name">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Restaurant Description:</p>
+              <input type="text" name="restaurantDescription" placeholder="Restaurant's description">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Speciality:</p>
+              <input type="text" name="restaurantSpeciality" placeholder="Restaurant's speciality">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Price:</p>
+              <input type="text" name="restaurantPrice" placeholder="Restaurant's speciality price">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Restaurant Photo:</p>
+              <input type="text" name="restaurantPhoto" placeholder="Http://...">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Stars:</p>
+              <input type="text" name="restaurantStars" placeholder="1,2,3,4 or 5">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Address:</p>
+              <input type="text" name="restaurantAddress" placeholder="Avenue...">
+            </div>
+            <div class="inputText">
+              <p class="restaurantInputText">Opening Hours:</p>
+              <input type="text" name="restaurantOpening" placeholder="9am to 20pm">
+            </div>
+
+            <button class="buttonSubmitContent" type="submit">Post Content</button>
+
+            
+          </form>
+
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+  </div>
+
+<%- include("baseContent/Footer"); %>

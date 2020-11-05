@@ -1,0 +1,317 @@
+body{
+  background-color: #fc3340;
+}
+
+.nav-bar-color{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-color a:link{
+  color: white;
+}
+
+.mainContent{
+  border-radius: 20px;
+  background-color: #ff414d;
+  margin: 8% 5%;
+  max-height: 100vh;
+}
+
+.mainTitle{
+  color: #FFF;
+  margin-top: 35%;
+}
+
+.mainTitle h1{
+  font-size: 56px;
+}
+.imgMain{
+  width: 100%;
+  height: 100%;
+}
+.buttonCheck{ 
+  margin-top: 25px; 
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #d61a27;
+  color: #FFF;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  min-height: 30px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.navbar-brand{
+  color: #FFF !important;
+
+}
+.buttonCheck:hover{
+  color: #FFF;
+  background-color: #5f040a;  
+}
+a:link{
+  color: #fff !important;
+  text-decoration: none;
+}
+
+a:link:hover{
+  text-decoration: none;
+  color: #fff !important;
+}
+
+a.nav-link{
+  color: #fff !important;
+
+}
+
+/* RESTAURANT PAGES */
+
+
+.restaurantMiniDisplay2{
+  padding: 3px;
+  margin-top: 20px;
+  background-color: #f7f2e7;
+  border-radius: 20px;
+  height: 380px;
+
+}
+
+.restaurantText{
+  padding: 5px;
+  text-align: center;
+}
+
+.restaurantText h1{
+  margin-top: 5px;
+}
+
+.restaurantText h2{
+  margin-top: 5px;
+  font-size: 16px ;
+
+}
+
+
+.restaurantMiniDisplay2 img{
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  max-height: 200px;
+}
+
+
+.fa-star{
+  color: gold;
+}
+
+
+/* POST CONTENT */
+
+.imgPostContent{
+  min-height: 700px;
+}
+
+.postContentDisplay{
+  min-height: 700px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #f7f2e7;
+
+}
+
+.postContentDisplayText{
+  padding: 10px;
+  max-width: 350px;
+  margin-top: 20px;
+
+
+}
+
+.inputText input{
+  border-radius: 5px;
+  width: 350px !important;
+  border: none;
+  border-bottom: 2px solid #ff414d;
+  background-color: #f7f2e7;
+
+}
+
+.restaurantInputText{
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+}
+
+.buttonSubmitContent{
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  width: 100%;
+  color: #FFF;
+  background-color: #ff414d;
+
+}
+
+
+/* CAROUSEL */
+
+.food-title-breakfast{
+  margin-top: 30px;
+  color: #f7f2e7;
+}
+
+.main-Food{
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #f7f2e7;
+}
+
+.main-food img{
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  max-height: 200px;
+}
+
+.carrosel-food{
+  margin-top: 5px;
+}
+
+.box-food{
+  
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 230px;
+  display: block;
+}
+
+.box-food:hover{
+  opacity: 0.8;
+}
+
+.box-food-title{
+  margin-top: 20px;
+  text-align: center;
+  color: #1a1c20;
+}
+
+.box-food-stars{
+  text-align: center;
+}
+.box-food-address{
+  color: #1a1c20;
+  align-items: center;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer{
+  margin-top: 40px !important;
+  color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align:center;
+}
+
+.fa-github{
+  color:#5f040a;  
+}
+
+.fa-github:hover{
+  color: #FFF;
+}
+
+/* CONTENT DISPLAY */
+
+.img-Content-Display{
+  width: 100%;
+  height: 900px;
+}
+
+.content-display{
+  border-radius: 0 0 20px 20px;
+  background-color: #f7f2e7;
+  width: 100%;
+}
+
+.content-hr{
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.content-Display-Text{
+  padding: 10px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.content-speciality{
+  border-radius: 20px;
+  margin-bottom: 20px ;
+  text-align: center;
+  align-items: center;
+  max-width: 350px;
+  margin-right: 20px;
+  margin-left: 10px;
+
+  height: 40px;
+  color: #f7f2e7;
+  background-color: #ff414d;
+}
+
+.content-speciality-text{
+  padding: 8px;
+}
+
+.content-description{
+  padding: 30px;
+}
+
+.content-imagePlace{
+  border-radius: 50px;
+  padding: 0 10px 10px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+.content-hr{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.img-Content-Display{
+  width: 100%;
+  height: 300px;
+}
+.content-speciality{
+  border-radius: 20px;
+  margin-bottom: 20px ;
+  text-align: center;
+  align-items: center;
+  min-width: 300px;
+  margin-right: 20px;
+  margin-left: 10px;
+
+  height: 40px;
+  color: #f7f2e7;
+  background-color: #ff414d;
+}
+.content-imagePlace{
+  width: 100%;
+  border-radius: 20px;
+}
+}

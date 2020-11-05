@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="food-title-breakfast">Get Ready for the day...</h1>
+  <div class="carrousel-food">
+    <div class="owl-carousel owl-theme">
+
+      <% posts.forEach(function(post){ %>
+            <a href="/restaurants/<%= post._id%>">
+              <div class="main-Food">
+                <div class="item">
+                  <img class="box-food" src="<%= post.image %>" alt="">
+                  <h1 class="box-food-title"><%= post.name %></h1>
+                  <div class="box-food-stars">
+  
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+       
+                  </div>
+                  <div class="box-food-address">
+                    <p><i><%= post.address %></i></p>
+                  </div>
+                </div>    
+              </div>
+          <div>
+          </div>
+        </a>
+        <% }) %>
+
+      </a>
+
+
+
+</div>

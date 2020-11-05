@@ -1,0 +1,33 @@
+<%- include("baseContent/Header"); %>
+
+<div>
+  <img class="img-Content-Display" src="<%= image %> " alt="" srcset="">
+  <div class="container content-display">
+    <h1 class="content-Display-Text"><%= name %></h1>
+
+    <hr class="content-hr">
+    <div class="row">
+      <div class="col content-speciality">
+        <p class="content-speciality-text">Speciality: <%= speciality %> </p>
+      </div>
+      <div class="col content-speciality">
+        <p class="content-speciality-text">Restaurant stars: <%= stars %> </p>
+      </div>
+      <div class="col content-speciality">
+        <p class="content-speciality-text">Open: <%= opening_hours %> </p>
+      </div>
+
+      <div class="content-description">
+        <p><%= description %></p>
+      </div>
+
+      <div>
+     
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<%- include("baseContent/Footer"); %>
