@@ -44,7 +44,24 @@ const postSchema = {
   //imagePlace: [String],
 }
 
+const dinnerSchema = {
+  name: String,
+  description: String,
+  image: String,
+  stars: String,
+  type: String,
+  speciality: String,
+  price: Number,
+  latitude: Number,
+  longitude: Number,
+  address: String,
+  opening_hours: String,
+  opening_weekends: Boolean,
+  //imagePlace: [String],
+}
+
 const Post = mongoose.model("Post", postSchema);
+const Dinner = mongoose.model("Dinner", dinnerSchema);
 
 app.get("/", function(req, res){
   res.render("Home")
@@ -52,13 +69,50 @@ app.get("/", function(req, res){
 
 app.get("/restaurants", function(req, res){
 
-  Post.find({}, function(err, posts){
+  Post.find({}, function(err, posts, dinners){
     res.render("Restaurants", {
       posts: posts,
+      dinners: dinners,
     });
   })
 })
 
+
+app.get("/dinner", function(req, res){
+
+  Post.find({}, function(err, dinners){
+    res.render("AddDinner", {
+      dinners: dinners
+    });
+  })
+})
+
+app.post("/dinner", function(req, res){
+  const dinner = new Dinner({
+    name: req.body.restaurantName,
+    description: req.body.restaurantDescription,
+    image: req.body.restaurantPhoto,
+    stars: req.body.restaurantStars,
+    speciality: req.body.restaurantSpeciality,
+    price: req.body.restaurantPrice,
+    address: req.body.restaurantAddress,
+    opening_hours: req.body.restaurantOpening,    
+    //imagePlace: req.body.restaurantImagePlace,
+  });
+
+  dinner.save(function(err){
+    if(!err){
+      res.redirect("/restaurants")
+    }
+  })
+});
+
+
+
+app.get("/dinner/:id", function(req, res){
+ 
+
+});
 
 app.post("/restaurants", function(req, res){
   const post = new Post({

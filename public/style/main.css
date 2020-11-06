@@ -107,6 +107,17 @@ a.nav-link{
   color: gold;
 }
 
+.fa-utensils{
+  color: #f7f2e7;
+  
+}
+.btn-mainSite{
+  background-color: #af2d2d;
+}
+
+.navbar-toggler-icon span{
+  color: #f7f2e7 !important;
+}
 
 /* POST CONTENT */
 
